@@ -1,51 +1,40 @@
-<body>
-  <header class="cabecalho">
-    <h1>Calculadora Ana</h1>
-  </header>
-  <main class="principal">
-    <div class="calculadora">
-      <div class="calculadora-visor">
-        <div class="visor-baixo">
-          <div class="visor-baixo-igualdade">=</div>
-          <button value ="22" type="text" disabled class="visor-baixo--calculo"></button>
-        </div>
-      </div>
-      <div class="calculadora-botoes">
-        <div class="botoes-um">
-          <button class="botoes">CE</button>
-          <button class="botoes">C</button>
-          <button class="botoes">%</button>
-          <button class="botoes">÷</button>
-        </div>
-        <div class="botoes-dois">
-          <button class="botoes">7</button>
-          <button class="botoes">8</button>
-          <button class="botoes">9</button>
-          <button class="botoes">x</button>
-        </div>
-        <div class="botoes-tres">
-          <button class="botoes">4</button>
-          <button class="botoes">5</button>
-          <button class="botoes">6</button>
-          <button class="botoes">-</button>
-        </div>
-        <div class="botoes-quatro">
-          <button class="botoes">1</button>
-          <button class="botoes">2</button>
-          <button class="botoes">3</button>
-          <button class="botoes">+</button>
-        </div>
-        <div class="botoes-cinco">
-          <button class="botoes">+/-</button>
-          <button class="botoes">0</button>
-          <button class="botoes">,</button>
-          <button class="botoes">=</button>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="rodape">
 
-  </footer>
-</body>
+  botoes.forEach(botao => {
+    botao.addEventListener('click', () => {
+      const valor = botao.textContent;
 
+      if (valor === 'CE') {
+        // Limpa o visor
+        expressao = '';
+        visor.value = '';
+      } else if (valor === 'C') {
+        // Apaga o último caractere
+        expressao = expressao.slice(0, -1);
+        visor.value = expressao;
+      } else if (valor === '=') {
+        try {
+          // Avalia a expressão
+          const resultado = eval(expressao.replace('x', '*').replace('÷', '/').replace(',', '.'));
+          visor.value = resultado;
+          expressao = resultado.toString();
+        } catch (e) {
+          visor.value = 'Erro';
+          expressao = '';
+        }
+      } else if (valor === '+/-') {
+        // Inverte o sinal
+        if (expressao) {
+          if (expressao.startsWith('-')) {
+            expressao = expressao.substring(1);
+          } else {
+            expressao = '-' + expressao;
+          }
+          visor.value = expressao;
+        }
+      } else {
+        // Adiciona o valor clicado à expressão
+        expressao += valor;
+        visor.value = expressao;
+      }
+    });
+  });

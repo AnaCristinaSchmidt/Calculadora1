@@ -1,112 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Define altura da tela */
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
+    body,
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
 
-/* Cabeçalho */
-.cabecalho {
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #6a1b9a;
-  color: white;
-}
+    .cabecalho {
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Área principal */
-.principal {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-}
+    .principal {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Calculadora */
-.calculadora {
-  background-color: #7c35be;
-  height: 60vh;
-  width: 30vw;
-  min-width: 300px;
-  border: 2px solid #000;
-  border-radius: 1rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+    .calculadora {
+      background-color: #7c35be;
+      height: 50vh;
+      width: 40vw;
+      border: 1px #000 solid;
+      border-radius: 1rem;
+    }
 
-/* Visor da calculadora */
-.calculadora-visor {
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #9b59b6;
-  padding: 0.5rem;
-  border-radius: 0.8rem;
-}
+    .calculadora-visor {
+      height: 20%;
+      display: block;
+    }
 
-/* Parte esquerda do visor (=) */
-.visor-baixo-igualdade {
-  font-size: 2rem;
-  color: white;
-  width: 20%;
-  text-align: center;
-}
+    .visor-cima {
+      display: flex;
+      justify-content: center;
+      height: 30%;
+    }
 
-/* Parte direita do visor (número) */
-.visor-baixo--calculo {
-  font-size: 1.8rem;
-  height: 2.5rem;
-  width: 70%;
-  text-align: right;
-  background: white;
-  border: none;
-  border-radius: 0.5rem;
-  padding-right: 0.5rem;
-}
+    .visor-anterior {
+      border: none;
+      background-color: #7c35be;
+      text-align: center;
+      border-radius: 1.5rem;
+    }
 
-/* Botões */
-.calculadora-botoes {
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+    .visor-baixo {
+      margin-top: 10px;
+      height: 70%;
+      display: flex;
+      align-items: center;
+    }
 
-/* Linhas de botões */
-.botoes-um, .botoes-dois, .botoes-tres, .botoes-quatro, .botoes-cinco {
-  display: flex;
-  justify-content: space-around;
-}
+    .visor-baixo-igualdade {
+      width: 20%;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
 
-/* Estilo dos botões */
-.botoes {
-  width: 20%;
-  height: 3rem;
-  border-radius: 50%;
-  border: none;
-  background-color: #e6b7dc;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
+    .visor-baixo--calculo {
+      font-size: 1.5rem;
+      height: 60%;
+      width: 80%;
+      text-align: right;
+    }
 
-.botoes:hover {
-  background-color: #d48fc9;
-  cursor: pointer;
-}
+    .calculadora-botoes {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
-/* Rodapé */
-.rodape {
-  height: 10vh;
-  background-color: #6a1b9a;
-}
+    .botoes-um,
+    .botoes-dois,
+    .botoes-tres,
+    .botoes-quatro,
+    .botoes-cinco {
+      height: 16%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .botoes {
+      width: 20%;
+      height: 100%;
+      border-radius: 100%;
+      border: none;
+      background-color: rgb(230, 183, 220);
+      font-size: medium;
+    }
+
+    .botoes:hover {
+      cursor: pointer;
+    }
+
+    .rodape {
+      height: 10vh;
+    }
