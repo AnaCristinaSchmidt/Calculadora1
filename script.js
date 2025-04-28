@@ -1,0 +1,51 @@
+<body>
+  <header class="cabecalho">
+    <h1>Calculadora Ana</h1>
+  </header>
+  <main class="principal">
+    <div class="calculadora">
+      <div class="calculadora-visor">
+        <div class="visor-baixo">
+          <div class="visor-baixo-igualdade">=</div>
+          <button value ="22" type="text" disabled class="visor-baixo--calculo"></button>
+        </div>
+      </div>
+      <div class="calculadora-botoes">
+        <div class="botoes-um">
+          <button class="botoes">CE</button>
+          <button class="botoes">C</button>
+          <button class="botoes">%</button>
+          <button class="botoes">÷</button>
+        </div>
+        <div class="botoes-dois">
+          <button class="botoes">7</button>
+          <button class="botoes">8</button>
+          <button class="botoes">9</button>
+          <button class="botoes">x</button>
+        </div>
+        <div class="botoes-tres">
+          <button class="botoes">4</button>
+          <button class="botoes">5</button>
+          <button class="botoes">6</button>
+          <button class="botoes">-</button>
+        </div>
+        <div class="botoes-quatro">
+          <button class="botoes">1</button>
+          <button class="botoes">2</button>
+          <button class="botoes">3</button>
+          <button class="botoes">+</button>
+        </div>
+        <div class="botoes-cinco">
+          <button class="botoes">+/-</button>
+          <button class="botoes">0</button>
+          <button class="botoes">,</button>
+          <button class="botoes">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+
+  </footer>
+</body>
+
