@@ -1,11 +1,11 @@
-# Grupo de Estudos - AGES 💻
+#Study Group - AGES 💻
 
-Este repositório reúne os projetos desenvolvidos durante as sprints do grupo de estudos da AGES.
+This repository brings together the projects developed during the AGES study group sprints.
 
 ---
 
-## 🧠 Sprint 1 – Calculadora
+## 🧠 Sprint 1 – Calculator
 
-Para essa sprint, foi proposto realizar a modelagem de uma **calculadora**, desenvolvida 100% com **HTML, CSS e JavaScript**.
+For this sprint, the proposal was to model a **calculator**, developed 100% with **HTML, CSS and JavaScript**.
 
-O projeto foi realizado em apenas 3 dias e não apresentou grande dificuldade técnica, mas foi essencial para aplicar conceitos iniciais de estrutura, lógica e estilo na prática.
+The project was completed in just 3 days and did not present any major technical difficulties, but it was essential to apply initial concepts of structure, logic and style in practice.
